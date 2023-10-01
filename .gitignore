@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.idea
+
+# Single Target Config
+solution-config.props
+# Windows Publish Profiles
+!**/*.Windows/Properties/PublishProfiles/*.pubxml

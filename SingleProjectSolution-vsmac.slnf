@@ -1,0 +1,13 @@
+{
+  "solution": {
+    "path": "SingleProjectSolution.sln",
+    "projects": [
+      "SingleProjectSolution.Mobile\\SingleProjectSolution.Mobile.csproj",
+      "SingleProjectSolution.Skia.Gtk\\SingleProjectSolution.Skia.Gtk.csproj",
+      "SingleProjectSolution.Wasm\\SingleProjectSolution.Wasm.csproj",
+      "SingleProjectSolution.Server\\SingleProjectSolution.Server.csproj",
+      "SingleProjectSolution.Base\\SingleProjectSolution.Base.csproj",
+      "SingleProjectSolution\\SingleProjectSolution.csproj"
+    ]
+  }
+}
