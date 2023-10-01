@@ -8,6 +8,9 @@
     }
   },
   "profiles": {
+    "SingleProjectSolution.Windows (Package)": {
+      "commandName": "MsixPackage"
+    },
     "SingleProjectSolution.Wasm": {
       "commandName": "Project",
       "dotnetRunMessages": true,
