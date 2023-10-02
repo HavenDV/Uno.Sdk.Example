@@ -1,8 +1,15 @@
-<Project Sdk="H.Uno.Sdk/0.9.1">
+<Project Sdk="H.Uno.Sdk/0.9.3">
 
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-maccatalyst;net7.0-android;net7.0-ios;net7.0-skia;net7.0-webassembly</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 	</PropertyGroup>
+
+<!--	<PropertyGroup Label="Test Uno 5.0">-->
+<!--		<UnoVersion>5.0.0-dev.3361</UnoVersion>-->
+<!--		<UnoWasmBootstrapVersion>8.0.0-dev.289</UnoWasmBootstrapVersion>-->
+<!--		<UnoResizetizerVersion>1.2.0-dev.68</UnoResizetizerVersion>-->
+<!--		<UnoExtensionsVersion>1.7.0-dev.1</UnoExtensionsVersion>-->
+<!--	</PropertyGroup>-->
 	
 </Project>
