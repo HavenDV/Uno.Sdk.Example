@@ -15,10 +15,13 @@ jobs:
           { version: 7.0.x, quality: ga },
           { version: 8.0.x, quality: preview }
         ]
-        use-msbuild: [true, false]
         configuration: [Debug, Release]
-        
-    name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/${{ matrix.dotnet.quality }}/${{ matrix.configuration }}/MSBuild-${{ matrix.use-msbuild }}
+        include:
+          - use-msbuild: false
+          - os: windows
+            use-msbuild: true
+          
+    name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/${{ matrix.configuration }}/MSBuild-${{ matrix.use-msbuild }}
     uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
     with:
       os: ${{ matrix.os }}-latest
