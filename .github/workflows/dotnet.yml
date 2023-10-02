@@ -1,0 +1,19 @@
+﻿name: Build and test
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    strategy:
+      matrix:
+        os: [windows, macos]
+        
+    name: Build and test
+    uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
+    with:
+      os: ${{ matrix.os }}-latest
+      workloads: maui
+      generate-build-number: false
+      conventional-commits-publish-conditions: false
