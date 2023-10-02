@@ -15,11 +15,10 @@ jobs:
           { version: 7.0.x, quality: ga },
           { version: 8.0.x, quality: preview }
         ]
-        include:
+        use-msbuild: [true, false]
+        exclude:
           - os: macos
-            use-msbuild: false
-          - os: windows
-            use-msbuild: [true, false]
+            use-msbuild: true
           
     name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/MSBuild(${{ matrix.use-msbuild }})
     uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
