@@ -15,5 +15,6 @@ jobs:
     with:
       os: ${{ matrix.os }}-latest
       workloads: maui
+      configuration: Debug
       generate-build-number: false
       conventional-commits-publish-conditions: false
