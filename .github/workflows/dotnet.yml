@@ -15,20 +15,20 @@ jobs:
           { version: 7.0.x, quality: ga },
           { version: 8.0.x, quality: preview }
         ]
-        configuration: [Debug, Release]
         include:
           - use-msbuild: false
           - os: windows
+            use-msbuild: false
+          - os: windows
             use-msbuild: true
           
-    name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/${{ matrix.configuration }}/MSBuild-${{ matrix.use-msbuild }}
+    name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/MSBuild(${{ matrix.use-msbuild }})
     uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
     with:
       os: ${{ matrix.os }}-latest
       dotnet-version: ${{ matrix.dotnet.version }}
       dotnet-quality: ${{ matrix.dotnet.quality }}
       use-msbuild: ${{ matrix.use-msbuild }}
-      configuration: ${{ matrix.configuration }}
       workloads: maui
       project-path: /p:MtouchLink=SdkOnly # fix for "The linker step 'Setup' failed during processing: This version of Microsoft.MacCatalyst"
       generate-build-number: false
