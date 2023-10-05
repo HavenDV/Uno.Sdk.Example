@@ -1,8 +1,10 @@
-<Project Sdk="H.Uno.Sdk/0.9.8">
+<Project Sdk="H.Uno.Sdk/0.11.1">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-maccatalyst;net7.0-android;net7.0-ios;net7.0-skia;net7.0-webassembly</TargetFrameworks>
+		<TargetFrameworks>net7.0-maccatalyst;net7.0-ios;net7.0-android;net7.0-gtk;net7.0-linux;net7.0-webassembly</TargetFrameworks>
 		<TargetFrameworks Condition="'$(MSBuildRuntimeType)' == 'Full'">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<OutputType>Exe</OutputType>
+<!--		<UseUnoUwp>false</UseUnoUwp>-->
 	</PropertyGroup>
 
 <!--	<PropertyGroup Label="Test Uno 5.0">-->
