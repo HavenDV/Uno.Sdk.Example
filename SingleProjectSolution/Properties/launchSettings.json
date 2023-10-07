@@ -11,10 +11,10 @@
     "Project": {
       "commandName": "Project"
     },
-    "SingleProjectSolution.Windows (Package)": {
+    "Windows (Package)": {
       "commandName": "MsixPackage"
     },
-    "SingleProjectSolution.Wasm": {
+    "WebAssembly": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
