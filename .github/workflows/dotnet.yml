@@ -27,6 +27,8 @@ jobs:
       dotnet-version: ${{ matrix.dotnet.version }}
       dotnet-quality: ${{ matrix.dotnet.quality }}
       use-msbuild: ${{ matrix.use-msbuild }}
+      custom-workload-macos: "https://raw.githubusercontent.com/HavenDV/Uno.Sdk/main/scripts/workload-install.sh"
+      custom-workload-windows: "https://raw.githubusercontent.com/HavenDV/Uno.Sdk/main/scripts/workload-install.ps1"
       workloads: maui
       project-path: /p:MtouchLink=SdkOnly # fix for "The linker step 'Setup' failed during processing: This version of Microsoft.MacCatalyst"
       generate-build-number: false
