@@ -61,6 +61,16 @@ Global
 		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|x64.Build.0 = Release|Any CPU
 		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|x86.ActiveCfg = Release|Any CPU
 		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|x86.Build.0 = Release|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Debug|ARM.Deploy.0 = Debug|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Debug|ARM64.Deploy.0 = Debug|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|ARM.Deploy.0 = Release|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|ARM64.Deploy.0 = Release|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|x64.Deploy.0 = Release|Any CPU
+		{A9B3016E-25F7-4847-8BB3-9747AEF8F250}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
