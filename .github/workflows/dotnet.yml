@@ -11,9 +11,7 @@ jobs:
       matrix:
         os: [windows, macos]
         dotnet: [
-          { version: 6.0.x, quality: ga },
-          { version: 7.0.x, quality: ga },
-          { version: 8.0.x, quality: preview }
+          { version: 8.0.x, quality: ga }
         ]
         use-msbuild: [true, false]
         exclude:
@@ -30,6 +28,6 @@ jobs:
       custom-workload-macos: "https://raw.githubusercontent.com/HavenDV/Uno.Sdk/main/scripts/workload-install.sh"
       custom-workload-windows: "https://raw.githubusercontent.com/HavenDV/Uno.Sdk/main/scripts/workload-install.ps1"
       workloads: maui
-      project-path: /p:MtouchLink=SdkOnly # fix for "The linker step 'Setup' failed during processing: This version of Microsoft.MacCatalyst"
+      #project-path: /p:MtouchLink=SdkOnly # fix for "The linker step 'Setup' failed during processing: This version of Microsoft.MacCatalyst"
       generate-build-number: false
       conventional-commits-publish-conditions: false
