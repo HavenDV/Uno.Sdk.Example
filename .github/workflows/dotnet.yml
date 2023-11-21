@@ -15,7 +15,7 @@ jobs:
         ]
         use-msbuild: [true, false]
         exclude:
-          - os: macos
+          - os: macos-13
             use-msbuild: true
           
     name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/MSBuild(${{ matrix.use-msbuild }})
