@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows, macos]
+        os: [windows-latest, macos-13]
         dotnet: [
           { version: 8.0.x, quality: ga }
         ]
@@ -21,7 +21,7 @@ jobs:
     name: ${{ matrix.os }}/${{ matrix.dotnet.version }}/MSBuild(${{ matrix.use-msbuild }})
     uses: HavenDV/workflows/.github/workflows/dotnet_build-test-publish.yml@main
     with:
-      os: ${{ matrix.os }}-latest
+      os: ${{ matrix.os }}
       dotnet-version: ${{ matrix.dotnet.version }}
       dotnet-quality: ${{ matrix.dotnet.quality }}
       use-msbuild: ${{ matrix.use-msbuild }}
