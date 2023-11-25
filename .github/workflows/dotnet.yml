@@ -31,3 +31,4 @@ jobs:
       #project-path: /p:MtouchLink=SdkOnly # fix for "The linker step 'Setup' failed during processing: This version of Microsoft.MacCatalyst"
       generate-build-number: false
       conventional-commits-publish-conditions: false
+      publish: false
